@@ -1,0 +1,7 @@
+{
+  "venue_label": "ALLU Cinemas: Kokapet",
+  "movie_pattern": "(?:Namit Malhotra['’]s\\s+)?Ramayana(?:\\s*\\([^)]*\\))?",
+  "languages": ["Hindi", "Telugu"],
+  "dates": ["20261106", "20261107", "20261108"],
+  "url_template": "https://in.bookmyshow.com/cinemas/hyderabad/allu-cinemas-kokapet/buytickets/ALUC/{date}"
+}
