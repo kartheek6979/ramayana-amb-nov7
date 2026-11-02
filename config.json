@@ -1,7 +1,7 @@
 {
   "detector": "venue_date",
   "movie": "Ramayana (Hindi - HDR By Barco)",
-  "requested_date": "20261107",
+  "requested_date": "20261108",
   "venue_code": "AMBH",
   "venue_label": "AMB Cinemas: Gachibowli",
   "url_template": "https://in.bookmyshow.com/movies/hyderabad/ramayana-hdr-by-barcohindi/buytickets/ET00523473/{date}"
