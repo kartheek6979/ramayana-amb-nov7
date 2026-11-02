@@ -1,9 +1,8 @@
 name: booking-watch
 
 on:
-  workflow_dispatch: {}   # lets you trigger a manual run from the Actions tab
+  workflow_dispatch: {}
 
-# Allow the workflow to commit the updated state file back to the repo.
 permissions:
   contents: write
 
@@ -14,34 +13,30 @@ concurrency:
 jobs:
   poll:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
       - name: Install dependencies
         run: pip install -r requirements.txt
-
-      - name: Run poller
+      - name: Run ALLU watcher
+        id: poller
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          # Route through an India egress so BookMyShow doesn't 403 the
-          # US-based GitHub runner. Set SCRAPERAPI_KEY (or PROXY_URL) as a secret.
           SCRAPERAPI_KEY: ${{ secrets.SCRAPERAPI_KEY }}
-          PROXY_URL: ${{ secrets.PROXY_URL }}
-        run: python poller.py
-
-      - name: Persist state
+        run: python allu_poller.py
+      - name: Persist ALLU state
+        if: ${{ always() && steps.poller.outcome != 'skipped' }}
         run: |
-          if [[ -n "$(git status --porcelain state.json)" ]]; then
+          if [[ -n "$(git status --porcelain allu_state.json)" ]]; then
             git config user.name "booking-watch-bot"
             git config user.email "actions@users.noreply.github.com"
-            git add state.json
-            git commit -m "chore: update booking-watch state [skip ci]"
+            git add allu_state.json
+            git commit -m "chore: update ALLU shows [skip ci]"
             git push
           else
-            echo "No state change."
+            echo "No ALLU state change."
           fi
