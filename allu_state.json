@@ -1,1 +1,89 @@
-{"schema": 1, "dates": {}}
+{
+  "schema": 1,
+  "dates": {
+    "20261106": {
+      "seen": {
+        "[\"07:00\",\"TELUGU\",\"DOLBY CINEMA 3D\",\"DOLBY CINEMA\"]": {
+          "time": "07:00",
+          "language": "TELUGU",
+          "format": "DOLBY CINEMA 3D",
+          "screen": "DOLBY CINEMA"
+        },
+        "[\"07:20\",\"HINDI\",\"3D\",\"LASER 4K ATMOS\"]": {
+          "time": "07:20",
+          "language": "HINDI",
+          "format": "3D",
+          "screen": "LASER 4K ATMOS"
+        },
+        "[\"11:00\",\"HINDI\",\"DOLBY CINEMA 3D\",\"DOLBY CINEMA\"]": {
+          "time": "11:00",
+          "language": "HINDI",
+          "format": "DOLBY CINEMA 3D",
+          "screen": "DOLBY CINEMA"
+        },
+        "[\"15:00\",\"HINDI\",\"DOLBY CINEMA 3D\",\"DOLBY CINEMA\"]": {
+          "time": "15:00",
+          "language": "HINDI",
+          "format": "DOLBY CINEMA 3D",
+          "screen": "DOLBY CINEMA"
+        }
+      }
+    },
+    "20261107": {
+      "seen": {
+        "[\"07:00\",\"TELUGU\",\"DOLBY CINEMA 3D\",\"DOLBY CINEMA\"]": {
+          "time": "07:00",
+          "language": "TELUGU",
+          "format": "DOLBY CINEMA 3D",
+          "screen": "DOLBY CINEMA"
+        },
+        "[\"07:20\",\"HINDI\",\"3D\",\"LASER 4K ATMOS\"]": {
+          "time": "07:20",
+          "language": "HINDI",
+          "format": "3D",
+          "screen": "LASER 4K ATMOS"
+        },
+        "[\"11:00\",\"HINDI\",\"DOLBY CINEMA 3D\",\"DOLBY CINEMA\"]": {
+          "time": "11:00",
+          "language": "HINDI",
+          "format": "DOLBY CINEMA 3D",
+          "screen": "DOLBY CINEMA"
+        },
+        "[\"15:00\",\"HINDI\",\"DOLBY CINEMA 3D\",\"DOLBY CINEMA\"]": {
+          "time": "15:00",
+          "language": "HINDI",
+          "format": "DOLBY CINEMA 3D",
+          "screen": "DOLBY CINEMA"
+        }
+      }
+    },
+    "20261108": {
+      "seen": {
+        "[\"07:00\",\"TELUGU\",\"DOLBY CINEMA 3D\",\"DOLBY CINEMA\"]": {
+          "time": "07:00",
+          "language": "TELUGU",
+          "format": "DOLBY CINEMA 3D",
+          "screen": "DOLBY CINEMA"
+        },
+        "[\"07:20\",\"HINDI\",\"3D\",\"LASER 4K ATMOS\"]": {
+          "time": "07:20",
+          "language": "HINDI",
+          "format": "3D",
+          "screen": "LASER 4K ATMOS"
+        },
+        "[\"11:00\",\"HINDI\",\"DOLBY CINEMA 3D\",\"DOLBY CINEMA\"]": {
+          "time": "11:00",
+          "language": "HINDI",
+          "format": "DOLBY CINEMA 3D",
+          "screen": "DOLBY CINEMA"
+        },
+        "[\"15:00\",\"HINDI\",\"DOLBY CINEMA 3D\",\"DOLBY CINEMA\"]": {
+          "time": "15:00",
+          "language": "HINDI",
+          "format": "DOLBY CINEMA 3D",
+          "screen": "DOLBY CINEMA"
+        }
+      }
+    }
+  }
+}
